@@ -1,0 +1,27 @@
+﻿<Page
+    x:Class="App1.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBox x:Name="a1" HorizontalAlignment="Center" Text="{Binding}"
+                 Height="76" Margin="0,143,0,0" TextWrapping="Wrap" 
+                 TextAlignment="Right" FontSize="38" 
+                 VerticalAlignment="Top" Width="868"/>
+        <Button x:Name="button" Content="+" HorizontalAlignment="Left" FontSize="50"
+                Height="102" Margin="249,311,0,0" VerticalAlignment="Top" Width="212" Click="plus"/>
+        <Button x:Name="button_Copy" Content="-" FontSize="50" HorizontalAlignment="Center" 
+                Height="102" Margin="0,311,0,0" VerticalAlignment="Top" Width="212" Click="minus"/>
+        <Button x:Name="button_Copy1" Content="x" HorizontalAlignment="Right" FontSize="50"
+                Height="102" Margin="0,311,249,0" VerticalAlignment="Top" Width="212" Click="multi"/>
+        <Button x:Name="button1" Content="/" HorizontalAlignment="Left" FontSize="50"
+                Height="100" Margin="249,487,0,0" VerticalAlignment="Top" Width="209" Click="div"/>
+        <Button x:Name="button2" Content="=" HorizontalAlignment="Center" FontSize="50"
+                Margin="0,487,0,0" VerticalAlignment="Top" Height="100" Width="212" Click="equal"/>
+
+    </Grid>
+</Page>
