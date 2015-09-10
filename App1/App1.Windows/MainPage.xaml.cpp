@@ -27,17 +27,22 @@ MainPage::MainPage()
 }
 
 int ch1, ch2, ch3, ch4;
+int s, d, m = 0;
 
 void App1::MainPage::plus(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e)
 {
-	ch1 = 1;
-	String^ str1 = a1->Text;
-	wstring ws1(str1->Data());
-	wstringstream convertor;
-	int ws1_int;
-	convertor << ws1;
-	convertor >> ws1_int;
-
+	//while (1)
+	{
+		ch1 = 1;
+		String^ str1 = a1->Text;
+		wstring ws1(str1->Data());
+		wstringstream convertor;
+		int ws1_int;
+		convertor << ws1;
+		convertor >> ws1_int;
+		s = s + ws1_int;
+		ch2 = s;
+	}
 }
 
 
@@ -55,14 +60,7 @@ void App1::MainPage::div(Platform::Object^ sender, Windows::UI::Xaml::RoutedEven
 
 void App1::MainPage::equal(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e)
 {
-
-	String^ str1 = a1->Text;
-	wstring ws1(str1->Data());
-	wstringstream convertor;
-	int ws1_int;
-	convertor << ws1;
-	convertor >> ws1_int;
-	a1->Text = ws1_int.ToString();
+	a2->Text = s.ToString();
 }
 
 
